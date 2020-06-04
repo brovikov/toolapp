@@ -1,0 +1,11 @@
+Description:
+    Stubs out a new service. Pass the service name, either CamleCased or under_scored
+    and an optional list of it's methods as arguments. To create service within a
+    module, just add --module NAME, or --module=NAME
+    this generates a service class in app/services or app/services/midule
+
+Example:
+    rails generate service Thing call module=Sub
+
+    This will create:
+        app/services/sub/thing.rb

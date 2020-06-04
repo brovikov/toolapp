@@ -1,0 +1,11 @@
+<% @module_names.each do |module_name| %>module <%= module_name.camelize %> 
+<% end -%>
+  class <%= @class_name_without_modules %>
+    extend Dry::Initializer
+<% for method in methods %>
+    def <%= method %>
+    end
+<% end -%>
+  end
+<% @module_names.each do  %>end
+<% end -%>

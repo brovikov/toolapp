@@ -1,0 +1,12 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <h3><%= @tool.name %></h3>
+
+  <b> Language: <%= @tool.language %></b><br>
+  <%= @tool.json_spec %>
+
+  <br>
+
+  <%= link_to 'Back', tools_path %>
+</div>
